@@ -1,0 +1,97 @@
+/* POLAROID IMAGES CSS */
+div.polaroid {
+	margin-top: 10px;
+	height:350px;
+  width: 426px;
+  background-color: #173753;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 40px;
+	position: relative;
+	left:60%;
+}
+
+div.containerP {
+	text-align: center;
+	color: white;
+  padding: 10px 20px;
+}
+
+/* FACE/FRAME DETAILS TEXT CSS */
+
+div.features{
+	column-count: 2;
+	column-gap: 50px;
+	column-rule-style:solid;
+	column-rule: 1px solid lightblue;
+	text-align: center;
+	position: fixed;
+	left:90px;
+	width: 700px;
+	height:350px;
+	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding-top:50px;
+	padding-bottom:50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 7px;
+}
+
+div.frame-recommendation{
+	column-count: 2;
+	column-gap: 100px;
+	position: fixed;
+	left:120px;
+	padding-top:220px;
+	padding-bottom:50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+button.shop_btn_frame_rec{
+
+		border-radius: 5px;
+	  background-color: #173753;
+	  border: none;
+	  color: #FFFFFF;
+	  text-align: center;
+	  font-size: 28px;
+	  padding: 20px 20px;
+
+
+}
+button.shop_btn_frame_rec span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button.shop_btn_frame_rec span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button.shop_btn_frame_rec:hover span {
+  padding-right: 25px;
+}
+
+button.shop_btn_frame_rec:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* GUIDE PAGE  */
+
+.guide{
+	column-count: 3;
+	column-gap: 50px;
+	box-shadow: 0 2px 1px 0 rgba(0.3, 0.3, 0.7, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding-top:50px;
+	padding-bottom:50px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
