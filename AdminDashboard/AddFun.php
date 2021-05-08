@@ -35,7 +35,7 @@
 <br> <br>  Material: <input type="text" name="material">
 <br> <br>  Gender: <input type="text" name="gender">
 <br> <br>  Category: <input type="text" name="category">
-
+<br><br> <input class="btn" type="submit" value="submit">
 
   </form>
 </div>
