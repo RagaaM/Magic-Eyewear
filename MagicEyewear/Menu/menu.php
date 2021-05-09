@@ -8,10 +8,16 @@
   <nav class="menu">
     <ul>
       <div class="logo">
-    <a href="/MagicEyewear/Homepage/homepage.php"><img src="/MagicEyewear/Menu/eyecare-logo.png" alt="logo" /></a>
+        <a href="/MagicEyewear/Homepage/homepage.php"><img src="/MagicEyewear/Menu/eyecare-logo.png" alt="logo" /></a>
+    </div>
+    <div class="right-nav-side-items">
+    <a href="/MagicEyewear/Cart/Cart.php"><i class="fas fa-shopping-cart" title="Cart"></i></a>&nbsp;
+    <a href="/MagicEyewear/User/LoginPage.php"><i class="fas fa-sign-in-alt" title="Login"></i></a>&nbsp;
+    <a href="/MagicEyewear/User/RegistrationPage.php"><i class="fas fa-user-plus" title="Register"></i></a>&nbsp;
     </div>
     <div class="dropdown">
-      <li><a href="">Eyeglasses</a></li>
+      <!-- Change to optical frames later -->
+      <li><a href="/MagicEyewear/Products/Gallery/Eyeglasses.php">Eyeglasses</a></li>
         <div class="dropdown-content">
           <a href="/MagicEyewear/Products/Gallery/Eyeglasses.php">All Eyeglasses</a>
           <a href="/MagicEyewear/Products/Categories/Gender/Men.php">Men</a>
@@ -21,7 +27,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <li><a href="">Sunglasses</a></li>
+        <li><a href="/MagicEyewear/Products/Gallery/Sunglasses.php">Sunglasses</a></li>
           <div class="dropdown-content">
             <a href="/MagicEyewear/Products/Gallery/Sunglasses.php">All Sunglasses</a>
             <a href="/MagicEyewear/Products/Categories/Gender/Men.php">Men</a>
@@ -31,7 +37,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <li><a href="">Sports</a></li>
+          <li><a href="/MagicEyewear/Products/Gallery/Sports.php">Sports</a></li>
             <div class="dropdown-content">
               <a href="/MagicEyewear/Products/Gallery/Sports.php">All Sports</a>
               <a href="/MagicEyewear/Products/Categories/Gender/Men.php">Men</a>
@@ -41,14 +47,17 @@
             </div>
           </div>
           <div class="dropdown">
-            <li><a href="">Brands</a></li>
+            <li><a href="/MagicEyewear/Products/Gallery/Brands.php">Brands</a></li>
               <div class="dropdown-content">
                 <a href="/MagicEyewear/Products/Gallery/Brands.php">All Brands</a>
-                <a href="/MagicEyewear/Products/Gallery/Categories/Men.php">Armani Exchange</a>
-                <a href="/MagicEyewear/Products/Gallery/Categories/Men.php">HUGO</a>
-                <a href="/MagicEyewear/Products/Gallery/Categories/Women.php">Ralph Lauren</a>
-                <a href="/MagicEyewear/Products/Gallery/Categories/Boys.php">Ray Ban</a>
-                <a href="/MagicEyewear/Products/Gallery/Categories/Girls.php">Tommy Hilfiger</a>
+                <a href="/MagicEyewear/Products/Gallery/Categories/">Armani Exchange</a>
+                <a href="/MagicEyewear/Products/Gallery/Categories/">HUGO</a>
+                <a href="/MagicEyewear/Products/Gallery/Categories/">Pierre Cardin</a>
+                <a href="/MagicEyewear/Products/Gallery/Categories/">POLAROID</a>
+                <a href="/MagicEyewear/Products/Gallery/Categories/">Ralph Lauren</a>
+                <a href="/MagicEyewear/Products/Gallery/Categories/">Ray Ban</a>
+                <a href="/MagicEyewear/Products/Gallery/Categories/">SEVENTH STREET</a>
+                <a href="/MagicEyewear/Products/Gallery/Categories/">Tommy Hilfiger</a>
               </div>
             </div>
      <li><a href="/MagicEyewear/Discover/AboutUs.php">About Us</a></li>
@@ -56,10 +65,7 @@
    </div>
     </ul>
 
-    <!-- <div class="menu-btns">
-            <ul>
-              <li><a href="/MagicEyewear/Cart/Cart.php"><i class="fas fa-shopping-cart"></i></a></li>
-            </ul>    </div> -->
+
   </nav>
 </body>
 </html>
