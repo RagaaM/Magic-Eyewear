@@ -59,7 +59,7 @@ nav ul li a {
   display:flex;
   padding: 15px;
   text-decoration: none;
-  color: #61a5c2;
+  color: #5c677d;
   font-weight: 800;
   text-transform: uppercase;
   margin: 0 10px;
@@ -166,7 +166,7 @@ nav.menu ul li a:hover:after {
 }
 
 .right-nav-side-items a{
-    color: #61a5c2;
+    color: #5c677d;
     font-size: 25px;
     padding-left: 10px;
     padding-right: 10px;
