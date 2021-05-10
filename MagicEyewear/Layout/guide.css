@@ -1,3 +1,36 @@
+/* --------------------------------- GUIDE PAGE ---------------------------------*/
+
+.face-shapes{
+	display: block;
+	column-count: 3;
+	padding-left: 10em;
+  padding-right: 10em;
+  margin: 0em 0em 0em 0em;
+}
+
+.image-overlay{
+	position: absolute;
+  margin:auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  width: 70%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #073b4c;
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------- SINGLE SHAPE FACE PAGE ---------------------------------*/
 /* POLAROID IMAGES CSS */
 div.polaroid {
 	margin-top: 10px;
