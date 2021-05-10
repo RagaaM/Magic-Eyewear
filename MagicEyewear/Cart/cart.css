@@ -1,4 +1,122 @@
-body {
+.col-sm-10 h2{
+  padding: 10px;
+  border-radius: 15px;
+  opacity: 0.5;
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #7BAAD3, #39434B);
+color: white;
+  font-size: 40px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  float: left;
+  text-align: left;
+}
 
-  min-height: 100vh;
+p.productPrice {
+  font-size: 20px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  float: left;
+  text-align: left;
+  color: #057BC5;
+  display: inline-block;
+  font-weight: 500;
+}
+
+
+.labels{
+  opacity: 0.8;
+font-size: 3px;
+margin-left:8px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.title{
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  border-bottom-color: #888888;
+  background-color: #eceef2;
+  font-size: 25px;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  color: #141e3e;
+}
+
+.container0{
+background: #F4F2F2;
+width: 800px;
+border-radius: 10px;
+}
+
+.productImage{
+  width:180px;
+  height:180px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.column{
+  float: left;
+  padding: 10px;
+  height: 200px;
+}
+.left, .right {
+  width: 25%;
+}
+.middle {
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col-sm-10 h2{
+  float: left;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-weight: bolder;
+}
+
+.middle h3{
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-weight: bold;
+  color: #032443;
+}
+
+.remove {
+  color: #E31E1E;
+  border-style: none;
+  background-color: #F4F2F2 ;
+  border-bottom-style: solid;
+  border-bottom-color: #E31E1E;
+  font-size: 18px;
+  position: relative;
+  top:10vh;
+  left:-12vh;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  width:110px;
+  text-align: left;
+}
+.fi-xnsuxl-trash-bin{
+  color: #E31E1E;
+  font-size: 16px;
+  position: relative;
+  top:9.5vh;
+  left:-17vh;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+.remove:hover{
+  background-color: #DDDBDB;
+}
+
+label{
+  position: relative;
+  font-size:20px;
+  font-weight: bold;
+  top:12vh;
+}
+
+.qty{
+  position: relative;
+  top:12vh;
+  font-size: 20px;
 }
