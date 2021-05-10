@@ -1,0 +1,119 @@
+.LeftBar{
+    background-color: blue ;
+    position: 5px, 10px;
+}
+.product {
+    border-radius: 50%;
+    width:100px; 
+    height:100px; 
+    padding:20px;
+  }
+.divOrders{
+    background-color:blue;
+}
+
+/* profile.php */
+
+.divInfo{
+    display:inline-block; 
+    padding-top:20px;
+    
+    
+}
+.product{
+    border-radius: 50%;
+    width:200px; 
+    height:200px; 
+    padding:20px;
+    
+}
+
+
+/* Functions pages */
+.view{
+    Background-color:#1899eb;
+    color:white;
+    Border-radius:10px; 
+    width:80px;
+    }
+    .add{
+    width:350px;
+    color:white;
+    background-color:#101a3b;	
+    }
+    
+    .DivLink{
+        width:350px;
+        color:white;
+        border-radius:10px;
+        background-color:#101a3b;	
+        text-decoration:none;
+        position:absolute;
+        
+    }
+    .Astyle{
+        color:white;
+        text-decoration:none;
+        padding-left: 120px;
+    }
+
+/* modifyfun page */
+.btn{
+    border-radius:10px;
+    background-color:#101a3b;
+    color:white;
+}
+/*ModifyProducts page */
+
+    .Modify{
+    width:350px;
+    color:white;
+    background-color:#101a3b;	
+    }
+
+
+
+
+/* DeleteProduct */
+.Delete{
+    width:350px;
+    color:white;
+    background-color:red;	
+    border-radius:10px;
+    }
+
+/* AddFunction page */
+.formBtn{
+    border-radius: 10px;
+    background-color: #101a3b;
+    color:white;
+}
+.text{
+    border-radius: 10px;
+}
+
+
+th{
+    padding: 20px;
+}
+td{
+    padding: 10px;
+}
+
+/* icons styles */
+.fas{
+    font-size: 20px;
+    color:white;
+}
+p{
+    padding-right: 20px;
+}
+
+/* catgories admin */
+.link{
+    padding: 10px;
+    padding-top: 10px;
+    color: white;
+}
+
+
