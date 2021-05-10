@@ -66,9 +66,9 @@ main {
 </header>
 <main>
   <h2>Our Mission</h2>
-  <p>We aim to provide our customers with an easy and affordable shopping experience.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   <h2>Our Vision</h2>
-  <p>We hope to expand our branches to reach more individuals looking for high-quality, inexpensive glasses </p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </main>
 </body>
 </html>
