@@ -46,47 +46,51 @@
 <body>
 <h1>Homepage</h1>
 
-<!-- Slider -->
-<div class="banner">
-	<!-- start slider -->
-       <div id="fwslider">
-         <div class="slider_container">
-            <div class="slide">
-                <!-- Slide image -->
-               <img src="/MagicEyewear/rayban2.jpg" class="img-responsive" alt=""/>
-                <!-- /Slide image -->
-                <!-- Texts container -->
-                <div class="slide_content">
-                	<!--
-                    <div class="slide_content_wrap">
-                         Text title 
-                        <h1 class="title">Run Over<br>Everything</h1>
-                        <!- /Text title 
-                        <div class="button"><a href="#">See Details</a></div>
-                    </div>
-                -->
-                </div>
-               <!-- /Texts container -->
-            </div>
-            <!-- /Duplicate to create more slides -->
-            <div class="slide">
-               <img src="/MagicEyewear/123.jpg" class="img-responsive" alt=""/>
-             <!--   < <div class="slide_content">
-                   <div class="slide_content_wrap">
-                        <h1 class="title"><br>Everything</h1>
-                       	<div class="button"><a href="#">See Details</a></div>
-                    </div>
-                </div>
-            </div>
-            <!-/slide -->
-        </div>
-        <div class="timers"></div>
-        <div class="slidePrev"><span></span></div>
-        <div class="slideNext"><span></span></div>
-       </div>
-       
-      </div>
-<!--/slider -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <!-- first slide -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="/MagicEyewear/images/DIVA rosa.jpg" alt="First slide">
+	  <div class="carousel-caption d-none d-md-block">
+    <h5>...</h5>
+    <p>...</p>
+  </div>
+    </div>
+ <!-- second slide -->
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/MagicEyewear/images/vto2.gif" alt="Second slide">
+	  <div class="carousel-caption d-none d-md-block">
+    <h5>...</h5>
+    <p>...</p>
+  </div>
+    </div>
+ <!-- third slide -->
+    <div class="carousel-item">
+      <img class="d-block w-100" src="/MagicEyewear/images/faceshapes.jpg" alt="Third slide">
+	  <div class="carousel-caption d-none d-md-block">
+    <h5>...</h5>
+    <p>...</p>
+  </div>
+    </div>
+
+  </div>
+
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
 <br>
 <br>
 
