@@ -131,7 +131,9 @@ nav.menu ul li a:hover:after {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: #ddd;
+font-size: 30px;
+}
 
 .dropdown:hover .dropdown-content {display: block;}
 
