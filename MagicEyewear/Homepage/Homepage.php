@@ -7,44 +7,11 @@
 <html>
 <head>
 	<title></title>
-	<!--
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
--->
 
-
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-	<link href="maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="code.jquery.com/jquery-1.11.1.min.js"></script>
-<style>
-
-.btn_group{
-	display: flex;
-	
-}
-.btn-change{
-    
-    background: lightseagreen;
-    margin: 20px;
-    float: left;
-    box-shadow: 0 0 1px #ccc;
-    -webkit-transition: all 0.5s ease-in-out;
-    border: 0px;
-    color: #fff;
-}
-.btn-change:hover{
-    -webkit-transform: scale(1.1);
-    background: #31708f;
-}
-</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="/MagicEyewear/Layout/homepage-style.css">
 </head>
 <body>
-<h1>Homepage</h1>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -57,24 +24,22 @@
     <div class="carousel-item active">
       <img class="d-block w-100" src="/MagicEyewear/images/DIVA rosa.jpg" alt="First slide">
 	  <div class="carousel-caption d-none d-md-block">
-    <h5>...</h5>
-    <p>...</p>
+    <h3>We Sell Solutions Not Products</h3>
   </div>
     </div>
  <!-- second slide -->
     <div class="carousel-item">
       <img class="d-block w-100" src="/MagicEyewear/images/vto2.gif" alt="Second slide">
 	  <div class="carousel-caption d-none d-md-block">
-    <h5>...</h5>
-    <p>...</p>
+	  <h3>Meet Our Virtual Mirror</h3>
+	  <h5> First Virtual Try-On Software in Egypt! </h5>
   </div>
     </div>
  <!-- third slide -->
     <div class="carousel-item">
       <img class="d-block w-100" src="/MagicEyewear/images/faceshapes.jpg" alt="Third slide">
 	  <div class="carousel-caption d-none d-md-block">
-    <h5>...</h5>
-    <p>...</p>
+	  <h3>Discover the Best Eyewear for Your Face Shape</h3>
   </div>
     </div>
 
@@ -93,15 +58,74 @@
 
 <br>
 <br>
+<h2> Shop By Age Group </h2>
+
+<div style="clear: both">
+    <h3 style="float: left">Adults</h3>
+    <h3 style="float: right">Kids</h3>
+</div>
+
+
+<br>
+<br>
+
+<!--
+<div class="col1">
+  <img src="/MagicEyewear/images/women.jpg" alt="women" style="width:50%">
+  <button class="btn">Button</button>
+</div>
+<div class="col1">
+  <img src="/MagicEyewear/images/girls.jpg" alt="girls" style="width:50%">
+  <button class="btn">Button</button>
+</div>
+
+
+<div class="col1">
+  <img src="/MagicEyewear/images/men.jpg" alt="men" style="width:50%">
+  <button class="btn">Button</button>
+</div>
+<div class="col1">
+  <img src="/MagicEyewear/images/boys.jpg" alt="boys" style="width:50%">
+  <button class="btn">Button</button>
+</div> 
+-->
+
 
 <div class="btn_group">	
-  <button class="btn-change" style=" width:50%; height:250px">Women</button>
-  <button class="btn-change" style="width:50%; height:250px">Men</button>
+  <button class="btn-change" id="women" style=" width:50%; height:250px">Women</button>
+  <button class="btn-change" id="girls" style="width:50%; height:250px">Girls</button>
 </div>
 <div class="btn_group">	
-  <button class="btn-change" style=" width:50%; height:250px">Kids</button>
-  <button class="btn-change" style="width:50%; height:250px">Guide</button>
+  <button class="btn-change" id="men" style=" width:50%; height:250px">Men</button>
+  <button class="btn-change" id="boys" style="width:50%; height:250px">Boys</button>
 </div>
+
+<!--
+<div class="row1" style="clear:both;">
+<div class = "box1">
+         <img src = "/MagicEyewear/images/women.jpg" style=" width:50%" alt = "women">
+         <button class = "btn">women</button>
+      </div>
+	  <div class = "box2">
+         <img src = "/MagicEyewear/images/women.jpg" style=" width:50%" alt = "women">
+         <button class = "btn">women</button>
+      </div>
+</div>
+
+<div class="row2">
+
+	  <div class = "box3">
+         <img src = "/MagicEyewear/images/women.jpg" style=" width:50%" alt = "women">
+         <button class = "btn">women</button>
+      </div>
+	  <div class = "box4">
+         <img src = "/MagicEyewear/images/women.jpg" style=" width:50%" alt = "women">
+         <button class = "btn">women</button>
+      </div>
+	  </div>
+-->
+
+
 
 
 
