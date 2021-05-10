@@ -17,9 +17,9 @@
     </div>
     <div class="dropdown">
       <!-- Change to optical frames later -->
-      <li><a href="/MagicEyewear/Products/Gallery/Eyeglasses.php">Eyeglasses</a></li>
+      <li><a href="/MagicEyewear/Products/Gallery/Eyeglasses.php">Medical Glasses</a></li>
         <div class="dropdown-content">
-          <a href="/MagicEyewear/Products/Gallery/Eyeglasses.php">All Eyeglasses</a>
+          <a href="/MagicEyewear/Products/Gallery/Eyeglasses.php">All Medical Glasses</a>
           <a href="/MagicEyewear/Products/Categories/Gender/Men.php">Men</a>
           <a href="/MagicEyewear/Products/Categories/Gender/Women.php">Women</a>
           <a href="/MagicEyewear/Products/Categories/Gender/Boys.php">Boys</a>
