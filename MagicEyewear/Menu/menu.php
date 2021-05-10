@@ -10,10 +10,10 @@
       <div class="logo">
         <a href="/MagicEyewear/Homepage/homepage.php"><img src="/MagicEyewear/Menu/eyecare-logo.png" alt="logo" /></a>
     </div>
-    <div class="right-nav-side-items">
-    <a href="/MagicEyewear/Cart/Cart.php"><i class="fas fa-shopping-cart" title="Cart"></i></a>&nbsp;
-    <a href="/MagicEyewear/User/LoginPage.php"><i class="fas fa-sign-in-alt" title="Login"></i></a>&nbsp;
-    <a href="/MagicEyewear/User/RegistrationPage.php"><i class="fas fa-user-plus" title="Register"></i></a>&nbsp;
+    <div class="right-nav-side-items" style="float:right;">
+    <a href="/MagicEyewear/Cart/Cart.php"><i class="fas fa-shopping-cart" title="Cart"></i></a>
+    <a href="/MagicEyewear/User/LoginPage.php"><i class="fas fa-sign-in-alt" title="Login"></i></a>
+    <a href="/MagicEyewear/User/RegistrationPage.php"><i class="fas fa-user-plus" title="Register"></i></a>
     </div>
     <div class="dropdown">
       <!-- Change to optical frames later -->
