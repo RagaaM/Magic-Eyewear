@@ -62,5 +62,12 @@
 			</div>
 		</a>
 		</div>
+				
+				<?php
+   $path = $_SERVER['DOCUMENT_ROOT'];
+   $path .= "/MagicEyewear/footer.php";
+   include ($path);
+?>
+				
 		</body>
 </html>
