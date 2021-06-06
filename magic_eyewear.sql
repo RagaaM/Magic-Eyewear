@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2021 at 10:52 PM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 8.0.3
+-- Generation Time: Jun 07, 2021 at 01:07 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -28,7 +29,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `brand` (
-  `ID` int(11) NOT NULL,
+  `BrandID` int(11) NOT NULL,
   `BrandName` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -36,7 +37,7 @@ CREATE TABLE `brand` (
 -- Dumping data for table `brand`
 --
 
-INSERT INTO `brand` (`ID`, `BrandName`) VALUES
+INSERT INTO `brand` (`BrandID`, `BrandName`) VALUES
 (1, 'ARMANI EXCHANGE'),
 (2, 'Tommy Hilfiger'),
 (3, 'POLAROID'),
@@ -165,7 +166,7 @@ INSERT INTO `gender` (`GenderID`, `GenderType`) VALUES
 --
 
 CREATE TABLE `material` (
-  `ID` int(11) NOT NULL,
+  `MaterialID` int(11) NOT NULL,
   `Material` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -173,7 +174,7 @@ CREATE TABLE `material` (
 -- Dumping data for table `material`
 --
 
-INSERT INTO `material` (`ID`, `Material`) VALUES
+INSERT INTO `material` (`MaterialID`, `Material`) VALUES
 (1, 'Polycarbonate'),
 (2, 'Stainless Steel'),
 (3, 'Acetate'),
@@ -187,7 +188,7 @@ INSERT INTO `material` (`ID`, `Material`) VALUES
 --
 
 CREATE TABLE `ordercart` (
-  `ID` int(11) NOT NULL,
+  `OrderID` int(11) NOT NULL,
   `ClientID` int(11) NOT NULL,
   `FrameID` int(11) NOT NULL,
   `TotalPrice` int(11) NOT NULL
@@ -220,7 +221,7 @@ INSERT INTO `rim` (`RimID`, `Type`) VALUES
 --
 
 CREATE TABLE `user` (
-  `ID` int(11) NOT NULL,
+  `UserID` int(11) NOT NULL,
   `FirstName` varchar(50) NOT NULL,
   `LastName` varchar(50) NOT NULL,
   `Email` varchar(50) NOT NULL,
@@ -235,7 +236,7 @@ CREATE TABLE `user` (
 --
 
 CREATE TABLE `usertype` (
-  `ID` int(11) NOT NULL,
+  `UserTypeID` int(11) NOT NULL,
   `UserType` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -243,7 +244,7 @@ CREATE TABLE `usertype` (
 -- Dumping data for table `usertype`
 --
 
-INSERT INTO `usertype` (`ID`, `UserType`) VALUES
+INSERT INTO `usertype` (`UserTypeID`, `UserType`) VALUES
 (1, 'Admin'),
 (2, 'Client');
 
@@ -255,7 +256,7 @@ INSERT INTO `usertype` (`ID`, `UserType`) VALUES
 -- Indexes for table `brand`
 --
 ALTER TABLE `brand`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`BrandID`);
 
 --
 -- Indexes for table `color`
@@ -280,7 +281,8 @@ ALTER TABLE `frame`
   ADD KEY `FrameMaterial` (`FrameMaterial`),
   ADD KEY `AssignedGender_2` (`AssignedGender`),
   ADD KEY `FrameShape` (`FrameShape`),
-  ADD KEY `FrameType_3` (`FrameType`);
+  ADD KEY `FrameType_3` (`FrameType`),
+  ADD KEY `FrameSize` (`FrameSize`);
 
 --
 -- Indexes for table `frameshape`
@@ -304,13 +306,13 @@ ALTER TABLE `gender`
 -- Indexes for table `material`
 --
 ALTER TABLE `material`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`MaterialID`);
 
 --
 -- Indexes for table `ordercart`
 --
 ALTER TABLE `ordercart`
-  ADD PRIMARY KEY (`ID`),
+  ADD PRIMARY KEY (`OrderID`),
   ADD KEY `ClientID` (`ClientID`),
   ADD KEY `FrameID` (`FrameID`);
 
@@ -324,14 +326,14 @@ ALTER TABLE `rim`
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`ID`),
+  ADD PRIMARY KEY (`UserID`),
   ADD KEY `UserType` (`UserType`);
 
 --
 -- Indexes for table `usertype`
 --
 ALTER TABLE `usertype`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`UserTypeID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -341,7 +343,7 @@ ALTER TABLE `usertype`
 -- AUTO_INCREMENT for table `brand`
 --
 ALTER TABLE `brand`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `BrandID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `color`
@@ -377,13 +379,13 @@ ALTER TABLE `gender`
 -- AUTO_INCREMENT for table `material`
 --
 ALTER TABLE `material`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `MaterialID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `ordercart`
 --
 ALTER TABLE `ordercart`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `OrderID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `rim`
@@ -395,13 +397,13 @@ ALTER TABLE `rim`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `usertype`
 --
 ALTER TABLE `usertype`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `UserTypeID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
@@ -411,14 +413,14 @@ ALTER TABLE `usertype`
 -- Constraints for table `frame`
 --
 ALTER TABLE `frame`
-  ADD CONSTRAINT `frame_ibfk_1` FOREIGN KEY (`FrameMaterial`) REFERENCES `material` (`ID`),
+  ADD CONSTRAINT `frame_ibfk_1` FOREIGN KEY (`FrameMaterial`) REFERENCES `material` (`MaterialID`),
   ADD CONSTRAINT `frame_ibfk_2` FOREIGN KEY (`AssignedGender`) REFERENCES `gender` (`GenderID`);
 
 --
 -- Constraints for table `user`
 --
 ALTER TABLE `user`
-  ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`UserType`) REFERENCES `usertype` (`ID`);
+  ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`UserType`) REFERENCES `usertype` (`UserTypeID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
