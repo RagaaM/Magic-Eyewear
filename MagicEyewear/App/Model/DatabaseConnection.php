@@ -8,6 +8,12 @@ class DatabaseConnection
     protected $database="magic_eyewear";
     protected $databaseHandler, $databaseStatement; 
 
+    /**
+      * @param null|void
+      * @return null|void
+      * @desc Creates or resume an existing database connection...
+    **/
+
   public function __construct(){
     $conn = 'mysql:host='.$this->host.';database='.$this->database;
     
@@ -26,11 +32,22 @@ class DatabaseConnection
   } //End of construct()
 
 
+    /**
+      * @param string
+      * @return null|void
+      * @desc Creates a PDO statement object
+    **/
 
   public function query($query)
   {
     $this->databaseStatement->prepare($query);
   }
+
+    /**
+      * @param string|integer|
+      * @return null|void
+      * @desc Matches the correct datatype to the PDO Statement Object.
+    **/
 
   public function bind($tableColumn, $inputValue, $type = null)
   {
@@ -63,11 +80,23 @@ class DatabaseConnection
 
   }//End of bind()
 
+    /**
+      * @param null|void
+      * @return null|void
+      * @desc Executes a PDO Statement Object or a db query...
+    **/
+
   public function execute()
   {
     $this->databaseStatement->execute();
     return true;
   }//End of execute()
+
+  /**
+      * @param null|void
+      * @return null|void
+      * @desc Executes a PDO Statement Object an returns a single database record as an associative array...
+    **/
 
   public function fetch()
   {
@@ -75,6 +104,12 @@ class DatabaseConnection
     return $this->$databaseStatement->fetch(PDO::FETCH_ASSOC);
 
   }
+
+     /**
+      * @param null|void
+      * @return null|void
+      * @desc Executes a PDO Statement Object an returns nultiple database record as an associative array...
+    **/
 
   public fetchAll()
   {
@@ -84,7 +119,7 @@ class DatabaseConnection
   }//End of fetchAll()
 
 
-}
+} // End of class
 
 
 
